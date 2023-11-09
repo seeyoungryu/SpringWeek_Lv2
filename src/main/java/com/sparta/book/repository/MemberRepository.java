@@ -1,4 +1,9 @@
 package com.sparta.book.repository;
 
-public interface MemberRepository {
+import com.sparta.book.entity.Member;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface MemberRepository extends JpaRepository<Member, Long> {
+
+    Object save(Member member);
 }
