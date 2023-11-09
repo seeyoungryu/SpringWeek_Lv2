@@ -12,6 +12,7 @@ import java.util.List;
 @RequestMapping("/api")
 public class MemberController {
 
+
     private final MemberService memberService;
 
     public MemberController(MemberService memberService)
